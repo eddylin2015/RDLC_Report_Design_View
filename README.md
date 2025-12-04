@@ -1,32 +1,40 @@
 # RDLC_Report_Design_View
 
-## 微专业课程-3小时rdlc报表
+## 微专业课程-进阶-3小时rdlc报表
 
-即吃面,快餐课程，是指電腦程式职业技能，即吃即用，快吃又有營養，給你0到1的體驗, 技能入門,
-幫助同學提高趣味感成就感,滿滿干貨,電腦程式必備技能。
+即吃面，短视频，快餐体验课程。
 
-## 基礎知識XML , VS, C# , WinForm 
+课程是指電腦程式职业技能，即吃即用，快吃又有營養，技能入門，給你0到1的體驗，
 
+幫助同學提高趣味感成就感,滿滿干貨,電腦程式必備技能。有类培训课程实用主义。学完体验课程衔接职业培训中心CM课程,资深导师继续深造。
+
+## 基礎知識
+
+- 熟悉 XML , VS, 
+- 初级 C#, Console, 
+- 中阶 WinForm , Dll
+- 高级 Mysql, DataSet
+- 阶级 Edge-JS rdlc_render.dll 汇出PDF
+  
 ## 工具
-
 - Visual studio 
 - Microsoft RDLC Report Designer
 https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftRdlcReportDesignerforVisualStudio-18001
-
 - Microsoft.ReportViewer.Runtime.WinForms
 NuGet\Install-Package Microsoft.ReportViewer.Runtime.WinForms -Version 12.0.2402.15
-
 - Install Microsoft Report Builder
 https://www.microsoft.com/en-us/download/details.aspx?id=53613
+- Mysql 8.0
+- Node.js
+  
+## RDLC 教学大纲
 
-## RDLC
+- 1.simple report , image
+- 2.DataSet and List , Table, Matrix
+- 3.Group(footer, header)
+- 4.Sub Report
 
-- simple report , image
-- DataSet and List , Table, Matrix
-- Group(footer, header)
-- Sub Report
-
-### Code
+### 实验代码
 ```C#
         private void Form1_LoadRep3(object sender, EventArgs e)
         {
