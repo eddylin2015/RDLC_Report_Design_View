@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet1" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="STDINFO" msprop:Generator_RowClassName="STDINFORow" msprop:Generator_RowEvHandlerName="STDINFORowChangeEventHandler" msprop:Generator_RowDeletedName="STDINFORowDeleted" msprop:Generator_RowDeletingName="STDINFORowDeleting" msprop:Generator_RowEvArgName="STDINFORowChangeEvent" msprop:Generator_TablePropName="STDINFO" msprop:Generator_RowChangedName="STDINFORowChanged" msprop:Generator_UserTableName="STDINFO" msprop:Generator_RowChangingName="STDINFORowChanging" msprop:Generator_TableClassName="STDINFODataTable" msprop:Generator_TableVarName="tableSTDINFO">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="STDID" msprop:Generator_UserColumnName="STDID" msprop:Generator_ColumnPropNameInTable="STDIDColumn" msprop:Generator_ColumnPropNameInRow="STDID" msprop:Generator_ColumnVarNameInTable="columnSTDID" type="xs:string" minOccurs="0" />
+              <xs:element name="STDNAME" msprop:Generator_UserColumnName="STDNAME" msprop:Generator_ColumnPropNameInTable="STDNAMEColumn" msprop:Generator_ColumnPropNameInRow="STDNAME" msprop:Generator_ColumnVarNameInTable="columnSTDNAME" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="STDTRAN" msprop:Generator_RowEvHandlerName="STDTRANRowChangeEventHandler" msprop:Generator_RowDeletedName="STDTRANRowDeleted" msprop:Generator_RowDeletingName="STDTRANRowDeleting" msprop:Generator_RowEvArgName="STDTRANRowChangeEvent" msprop:Generator_TablePropName="STDTRAN" msprop:Generator_RowChangedName="STDTRANRowChanged" msprop:Generator_RowChangingName="STDTRANRowChanging" msprop:Generator_TableClassName="STDTRANDataTable" msprop:Generator_RowClassName="STDTRANRow" msprop:Generator_TableVarName="tableSTDTRAN" msprop:Generator_UserTableName="STDTRAN">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TRID" msprop:Generator_ColumnPropNameInRow="TRID" msprop:Generator_ColumnPropNameInTable="TRIDColumn" msprop:Generator_ColumnVarNameInTable="columnTRID" msprop:Generator_UserColumnName="TRID" type="xs:string" minOccurs="0" />
+              <xs:element name="STDID" msprop:Generator_ColumnPropNameInRow="STDID" msprop:Generator_ColumnPropNameInTable="STDIDColumn" msprop:Generator_ColumnVarNameInTable="columnSTDID" msprop:Generator_UserColumnName="STDID" type="xs:string" minOccurs="0" />
+              <xs:element name="YEAR" msprop:Generator_ColumnPropNameInRow="YEAR" msprop:Generator_ColumnPropNameInTable="YEARColumn" msprop:Generator_ColumnVarNameInTable="columnYEAR" msprop:Generator_UserColumnName="YEAR" type="xs:string" minOccurs="0" />
+              <xs:element name="CLASSNO" msprop:Generator_ColumnPropNameInRow="CLASSNO" msprop:Generator_ColumnPropNameInTable="CLASSNOColumn" msprop:Generator_ColumnVarNameInTable="columnCLASSNO" msprop:Generator_UserColumnName="CLASSNO" type="xs:string" minOccurs="0" />
+              <xs:element name="SEAT" msprop:Generator_ColumnPropNameInRow="SEAT" msprop:Generator_ColumnPropNameInTable="SEATColumn" msprop:Generator_ColumnVarNameInTable="columnSEAT" msprop:Generator_UserColumnName="SEAT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="STDMARK" msprop:Generator_RowEvHandlerName="STDMARKRowChangeEventHandler" msprop:Generator_RowDeletedName="STDMARKRowDeleted" msprop:Generator_RowDeletingName="STDMARKRowDeleting" msprop:Generator_RowEvArgName="STDMARKRowChangeEvent" msprop:Generator_TablePropName="STDMARK" msprop:Generator_RowChangedName="STDMARKRowChanged" msprop:Generator_RowChangingName="STDMARKRowChanging" msprop:Generator_TableClassName="STDMARKDataTable" msprop:Generator_RowClassName="STDMARKRow" msprop:Generator_TableVarName="tableSTDMARK" msprop:Generator_UserTableName="STDMARK">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SCID" msprop:Generator_ColumnPropNameInRow="SCID" msprop:Generator_ColumnPropNameInTable="SCIDColumn" msprop:Generator_ColumnVarNameInTable="columnSCID" msprop:Generator_UserColumnName="SCID" type="xs:string" minOccurs="0" />
+              <xs:element name="STDID" msprop:Generator_ColumnPropNameInRow="STDID" msprop:Generator_ColumnPropNameInTable="STDIDColumn" msprop:Generator_ColumnVarNameInTable="columnSTDID" msprop:Generator_UserColumnName="STDID" type="xs:string" minOccurs="0" />
+              <xs:element name="YEAR" msprop:Generator_ColumnPropNameInRow="YEAR" msprop:Generator_ColumnPropNameInTable="YEARColumn" msprop:Generator_ColumnVarNameInTable="columnYEAR" msprop:Generator_UserColumnName="YEAR" type="xs:string" minOccurs="0" />
+              <xs:element name="COURSE" msprop:Generator_ColumnPropNameInRow="COURSE" msprop:Generator_ColumnPropNameInTable="COURSEColumn" msprop:Generator_ColumnVarNameInTable="columnCOURSE" msprop:Generator_UserColumnName="COURSE" type="xs:string" minOccurs="0" />
+              <xs:element name="MARK" msprop:Generator_ColumnPropNameInRow="MARK" msprop:Generator_ColumnPropNameInTable="MARKColumn" msprop:Generator_ColumnVarNameInTable="columnMARK" msprop:Generator_UserColumnName="MARK" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="STDCD" msprop:Generator_RowEvHandlerName="STDCDRowChangeEventHandler" msprop:Generator_RowDeletedName="STDCDRowDeleted" msprop:Generator_RowDeletingName="STDCDRowDeleting" msprop:Generator_RowEvArgName="STDCDRowChangeEvent" msprop:Generator_TablePropName="STDCD" msprop:Generator_RowChangedName="STDCDRowChanged" msprop:Generator_RowChangingName="STDCDRowChanging" msprop:Generator_TableClassName="STDCDDataTable" msprop:Generator_RowClassName="STDCDRow" msprop:Generator_TableVarName="tableSTDCD" msprop:Generator_UserTableName="STDCD">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CDID" msprop:Generator_ColumnPropNameInRow="CDID" msprop:Generator_ColumnPropNameInTable="CDIDColumn" msprop:Generator_ColumnVarNameInTable="columnCDID" msprop:Generator_UserColumnName="CDID" type="xs:string" minOccurs="0" />
+              <xs:element name="STDID" msprop:Generator_ColumnPropNameInRow="STDID" msprop:Generator_ColumnPropNameInTable="STDIDColumn" msprop:Generator_ColumnVarNameInTable="columnSTDID" msprop:Generator_UserColumnName="STDID" type="xs:string" minOccurs="0" />
+              <xs:element name="YEAR" msprop:Generator_ColumnPropNameInRow="YEAR" msprop:Generator_ColumnPropNameInTable="YEARColumn" msprop:Generator_ColumnVarNameInTable="columnYEAR" msprop:Generator_UserColumnName="YEAR" type="xs:string" minOccurs="0" />
+              <xs:element name="CD" msprop:Generator_ColumnPropNameInRow="CD" msprop:Generator_ColumnPropNameInTable="CDColumn" msprop:Generator_ColumnVarNameInTable="columnCD" msprop:Generator_UserColumnName="CD" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="STDINFOKey1">
+      <xs:selector xpath=".//mstns:STDINFO" />
+      <xs:field xpath="mstns:STDID" />
+    </xs:unique>
+    <xs:unique name="STDTRANKey1">
+      <xs:selector xpath=".//mstns:STDTRAN" />
+      <xs:field xpath="mstns:TRID" />
+    </xs:unique>
+    <xs:unique name="STDMARKKey1">
+      <xs:selector xpath=".//mstns:STDMARK" />
+      <xs:field xpath="mstns:SCID" />
+    </xs:unique>
+    <xs:unique name="STDCDKey1">
+      <xs:selector xpath=".//mstns:STDCD" />
+      <xs:field xpath="mstns:CDID" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="STDINFO_STDTRAN" msdata:parent="STDINFO" msdata:child="STDTRAN" msdata:parentkey="STDID" msdata:childkey="STDID" msprop:Generator_UserParentTable="STDINFO" msprop:Generator_UserChildTable="STDTRAN" msprop:Generator_RelationVarName="relationSTDINFO_STDTRAN" msprop:Generator_ChildPropName="GetSTDTRANRows" msprop:Generator_ParentPropName="STDINFORow" msprop:Generator_UserRelationName="STDINFO_STDTRAN" />
+      <msdata:Relationship name="STDINFO_STDMARK" msdata:parent="STDINFO" msdata:child="STDMARK" msdata:parentkey="STDID" msdata:childkey="STDID" msprop:Generator_UserParentTable="STDINFO" msprop:Generator_UserChildTable="STDMARK" msprop:Generator_RelationVarName="relationSTDINFO_STDMARK" msprop:Generator_ChildPropName="GetSTDMARKRows" msprop:Generator_ParentPropName="STDINFORow" msprop:Generator_UserRelationName="STDINFO_STDMARK" />
+      <msdata:Relationship name="STDINFO_STDCD" msdata:parent="STDINFO" msdata:child="STDCD" msdata:parentkey="STDID" msdata:childkey="STDID" msprop:Generator_UserParentTable="STDINFO" msprop:Generator_UserChildTable="STDCD" msprop:Generator_RelationVarName="relationSTDINFO_STDCD" msprop:Generator_ChildPropName="GetSTDCDRows" msprop:Generator_ParentPropName="STDINFORow" msprop:Generator_UserRelationName="STDINFO_STDCD" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

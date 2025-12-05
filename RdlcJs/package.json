@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "edge-js": "^25.0.0",
+    "express": "^5.1.0",
+    "newtonsoft.json": "^1.0.1"
+  }
+}
