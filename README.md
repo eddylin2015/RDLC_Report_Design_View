@@ -10,23 +10,23 @@
 
 ## 基礎知識
 
-- 熟悉 XML , VS, 
-- 初级 C#, Console, 
+- 初级 C#, Console 
 - 中阶 WinForm , Dll
 - 高级 Mysql, DataSet
-- 阶级 Edge-JS rdlc_render.dll 汇出PDF
+- 阶级 Edge-JS (rdlc_render.dll Export PDF using Node.js)
   
 ## 工具
-- Visual studio 
+
 - Microsoft RDLC Report Designer
 https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftRdlcReportDesignerforVisualStudio-18001
 - Microsoft.ReportViewer.Runtime.WinForms
 NuGet\Install-Package Microsoft.ReportViewer.Runtime.WinForms -Version 12.0.2402.15
 - Install Microsoft Report Builder
 https://www.microsoft.com/en-us/download/details.aspx?id=53613
-- Mysql 8.0
-- Node.js
-  
+
+## C# Basics Tutorial for Beginners (Deepseek 教程)
+## C# WinForms Tutorial
+## MySQL and DataSet in C# WinForms
 ## RDLC 教学大纲
 
 - 1.simple report , image
