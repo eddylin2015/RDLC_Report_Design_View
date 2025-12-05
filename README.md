@@ -8,15 +8,15 @@
 
 幫助同學提高趣味感成就感,滿滿干貨,電腦程式必備技能。有类培训课程实用主义。学完体验课程衔接职业培训中心CM课程,资深导师继续深造。
 
+这里混合了多种编程C#, JS, Python.以易用为主。
+
 ## 基礎知識
 
-- 初级 C#, Console 
-- 中阶 WinForm , Dll
-- 高级 Mysql, DataSet
-- 阶级 Edge-JS (rdlc_render.dll Export PDF using Node.js)
+- 初级 C#， Console，WinForm，Dll
+- 中级 Mysql, DataSet
+- 晋级 Edge-JS 
   
 ## 工具
-
 - Microsoft RDLC Report Designer
 https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftRdlcReportDesignerforVisualStudio-18001
 - Microsoft.ReportViewer.Runtime.WinForms
@@ -24,15 +24,26 @@ NuGet\Install-Package Microsoft.ReportViewer.Runtime.WinForms -Version 12.0.2402
 - Install Microsoft Report Builder
 https://www.microsoft.com/en-us/download/details.aspx?id=53613
 
-## C# Basics Tutorial for Beginners (Deepseek 教程)
+## C# Basics Tutorial for Beginners (采用 Deepseek 教程)
 ## C# WinForms Tutorial
 ## MySQL and DataSet in C# WinForms
 ## RDLC 教学大纲
-
-- 1.simple report , image
-- 2.DataSet and List , Table, Matrix
-- 3.Group(footer, header)
-- 4.Sub Report
+- Basic reports          
+- Data sources and datasets
+- Tables                 
+- Grouping
+- Expressions            
+- Page set-up
+- Exporting reports      
+- Parameters
+- Matrices               
+- Charts
+- Miniature charts       
+- Graphical indicators
+- Lists                  
+- Subreports  
+- Drill-through reports  
+- The SSRS web portal
 
 ### 实验代码
 ```C#
@@ -148,7 +159,7 @@ namespace RdlcRender
     }
 }
 ```
-### edge-js console export PDF
+###  Export PDF using edge-js
 ```js
 const { error } = require('console');
 const edge=require('edge-js');
