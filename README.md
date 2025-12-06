@@ -17,11 +17,14 @@
 - 晋级 Edge-JS, pythonnet 
   
 ## 工具
-- Microsoft RDLC Report Designer
-https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftRdlcReportDesignerforVisualStudio-18001
-- Microsoft.ReportViewer.Runtime.WinForms
-NuGet\Install-Package Microsoft.ReportViewer.Runtime.WinForms -Version 12.0.2402.15
-- Install Microsoft Report Builder
+- Step1:Microsoft RDLC Report Designer(.vsix) 
+- Visual Studio -->Extentions-->Manage Extentios-->Browse to
+- https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftRdlcReportDesignerforVisualStudio-18001
+
+- Step2: Microsoft.ReportingServices.ReportViewerControl.Winforms
+- NuGet\Install-Package Microsoft.ReportingServices.ReportViewerControl.Winforms -Version 150.1652.0
+
+- Step3: Install Microsoft Report Builder
 https://www.microsoft.com/en-us/download/details.aspx?id=53613
 
 ## C# Basics Tutorial for Beginners (采用 Deepseek 教程)
