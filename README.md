@@ -17,19 +17,29 @@
 - 晋级 Edge-JS, pythonnet 
   
 ## 工具
-- Step1:Microsoft RDLC Report Designer(.vsix) 
-- Visual Studio -->Extentions-->Manage Extentios-->Browse to
-- https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftRdlcReportDesignerforVisualStudio-18001
-
-- Step2: Microsoft.ReportingServices.ReportViewerControl.Winforms
-- NuGet\Install-Package Microsoft.ReportingServices.ReportViewerControl.Winforms -Version 150.1652.0
-
-- Step3: Install Microsoft Report Builder
+- Microsoft RDLC Report Designer
+https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftRdlcReportDesignerforVisualStudio-18001
+- ReportViewerControl.Winforms
+NuGet\Install-Package Microsoft.ReportingServices.ReportViewerControl.Winforms -Version 150.1652.0
+- Install Microsoft Report Builder
 https://www.microsoft.com/en-us/download/details.aspx?id=53613
 
 ## C# Basics Tutorial for Beginners (采用 Deepseek 教程)
 ## C# WinForms Tutorial
 ## MySQL and DataSet in C# WinForms
+https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-express-localdb?view=sql-server-ver17
+```CMD
+rem C:\Program Files\Microsoft SQL Server\160\Tools\Binn\
+REM Create an instance of LocalDB
+"SqlLocalDB.exe" create LocalDBApp1
+REM Start the instance of LocalDB
+"SqlLocalDB.exe" start LocalDBApp1
+REM Gather information about the instance of LocalDB
+"SqlLocalDB.exe" info LocalDBApp1
+REM Server=(localdb)\\LocalDBApp1;Integrated Security=true
+REM Server=(localdb)\\LocalDBApp1;Initial Catalog=mydb;Integrated Security=true
+REM C:\Users\usr\AppData\Local\Microsoft\Microsoft SQL Server Local DB\Instances\LocalDBApp1
+```
 ## RDLC 教学大纲
 - Basic reports          
 - Data sources and datasets
