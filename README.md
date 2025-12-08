@@ -26,7 +26,7 @@ https://www.microsoft.com/en-us/download/details.aspx?id=53613
 
 ## C# Basics Tutorial for Beginners (采用 Deepseek 教程)
 ## C# WinForms Tutorial
-## MySQL and DataSet in C# WinForms
+## SQL LocalDB and DataSet in C# WinForms
 https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-express-localdb?view=sql-server-ver17
 ```CMD
 rem C:\Program Files\Microsoft SQL Server\160\Tools\Binn\
