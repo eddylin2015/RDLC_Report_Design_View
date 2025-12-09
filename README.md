@@ -60,6 +60,7 @@ frmReport.reportViewer1.SetPageSettings(setup);
 
 ![](https://learn.microsoft.com/en-us/sql/reporting-services/application-integration/media/windows-app-local-report-settings.png?view=sql-server-ver17)
 
+
 - Data sources and datasets
 - Tables                 
 - Grouping
