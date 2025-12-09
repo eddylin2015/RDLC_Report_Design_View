@@ -42,6 +42,13 @@ REM C:\Users\usr\AppData\Local\Microsoft\Microsoft SQL Server Local DB\Instances
 ```
 ## RDLC 教学大纲
 - Basic reports          
+```js
+// "Report" -> "Report Properties"
+var setup = frmReport.reportViewer1.GetPageSettings();           
+setup.Margins = new System.Drawing.Printing.Margins(1, 1, 1, 1);
+frmReport.reportViewer1.SetPageSettings(setup);
+```
+
 - Data sources and datasets
 - Tables                 
 - Grouping
