@@ -45,6 +45,20 @@ REM C:\Users\usr\AppData\Local\Microsoft\Microsoft SQL Server Local DB\Instances
 
 + 2 pages: size: 7.9in 18.8in
 + 1 page inner : 7.7in 9.0 in
+[page margin](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs?view=sql-server-ver17)
+
+![](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/media/rspagemargins.gif?view=sql-server-ver17)
+```js
+// "Report" -> "Report Properties"
+var setup = frmReport.reportViewer1.GetPageSettings();           
+setup.Margins = new System.Drawing.Printing.Margins(1, 1, 1, 1);
+frmReport.reportViewer1.SetPageSettings(setup);
+```
+
+[WinForms ReportViewer control](https://learn.microsoft.com/en-us/sql/reporting-services/application-integration/using-the-winforms-reportviewer-control?view=sql-server-ver17)
+
+![](https://learn.microsoft.com/en-us/sql/reporting-services/application-integration/media/windows-app-local-report-settings.png?view=sql-server-ver17)
+>>>>>>> 8349e9d390b8d9208cac77ef1c12a62d0c6e4b4d
 
 - Data sources and datasets
 - Tables                 
@@ -61,6 +75,8 @@ REM C:\Users\usr\AppData\Local\Microsoft\Microsoft SQL Server Local DB\Instances
 - Subreports  
 - Drill-through reports  
 - The SSRS web portal
+
+[advance sample1:Generating RDLC Dynamically](https://www.codeproject.com/articles/Generating-RDLC-Dynamically-for-the-Report-Viewer-#comments-section)
 
 ### Display Booleans on an RDLC Report
 
