@@ -73,6 +73,8 @@ frmReport.reportViewer1.SetPageSettings(setup);
 - Drill-through reports  
 - The SSRS web portal
 
+[advance sample1:Generating RDLC Dynamically](https://www.codeproject.com/articles/Generating-RDLC-Dynamically-for-the-Report-Viewer-#comments-section)
+
 ### Display Booleans on an RDLC Report
 
 Change the font to Wingdings, and use an expression.
