@@ -42,9 +42,9 @@ REM C:\Users\usr\AppData\Local\Microsoft\Microsoft SQL Server Local DB\Instances
 ```
 ## RDLC 教学大纲
 
-### Basic reports          
+#### Basic reports          
 
-#### Rep Property
+Report Property : 
 
 ![RepProperty](https://github.com/eddylin2015/RDLC_Report_Design_View/blob/main/img/RepProperty.png?raw=true)
 
@@ -58,6 +58,7 @@ The A4 size paper measures 210 by 297 millimeters (8.27 in × 11.7 in)
 [page margin](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs?view=sql-server-ver17)
 
 ![](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/media/rspagemargins.gif?view=sql-server-ver17)
+
 ```js
 // "Report" -> "Report Properties"
 var setup = frmReport.reportViewer1.GetPageSettings();           
@@ -69,24 +70,22 @@ frmReport.reportViewer1.SetPageSettings(setup);
 
 ![](https://learn.microsoft.com/en-us/sql/reporting-services/application-integration/media/windows-app-local-report-settings.png?view=sql-server-ver17)
 
+#### Data sources and datasets
+#### Tables                 
+#### Grouping
+#### Expressions            
+#### Page set-up
+#### Exporting reports      
+#### Parameters
+#### Matrices               
+#### Charts
+#### Miniature charts       
+#### Graphical indicators
+#### Lists                  
+#### Subreports  
+#### Drill-through reports  
+#### The SSRS web portal
 
-- Data sources and datasets
-- Tables                 
-- Grouping
-- Expressions            
-- Page set-up
-- Exporting reports      
-- Parameters
-- Matrices               
-- Charts
-- Miniature charts       
-- Graphical indicators
-- Lists                  
-- Subreports  
-- Drill-through reports  
-- The SSRS web portal
-
-[advance sample1:Generating RDLC Dynamically](https://www.codeproject.com/articles/Generating-RDLC-Dynamically-for-the-Report-Viewer-#comments-section)
 
 ### Display Booleans on an RDLC Report
 
@@ -94,9 +93,13 @@ Change the font to Wingdings, and use an expression.
 
 =iif(Fields!FieldName.Value, ChrW(254), Chr(111)) If the boolean is true, you will get a checkmark in the box, otherwise you will get an empty box.
 
+## 附加题
+
+[advance sample1:Generating RDLC Dynamically](https://www.codeproject.com/articles/Generating-RDLC-Dynamically-for-the-Report-Viewer-#comments-section)
+
 ## 參考:
 
-### 網上資料
+## 網上資料
 
 - https://learn.microsoft.com/en-us/dynamics365/business-central/ui-rdlc-report-layouts
 - https://www.cnblogs.com/NaughtyCat/p/auto-generate-report.html
@@ -108,6 +111,7 @@ Change the font to Wingdings, and use an expression.
 - https://lawrencetech.blogspot.com/2013/12/netpdf_6.html
 
 ## git Merge
+
 ```cmd
 (env) c:\code\fileshare\www\RDLC_Report_Design_View>git pull
 Updating 4f3fe0a..2b0b862

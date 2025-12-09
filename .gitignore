@@ -1,0 +1,6 @@
+ex/ 
+*.exe
+debug/
+*.rdl*
+packages/
+.vs/
