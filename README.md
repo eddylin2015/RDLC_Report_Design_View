@@ -41,9 +41,13 @@ REM Server=(localdb)\\LocalDBApp1;Initial Catalog=mydb;Integrated Security=true
 REM C:\Users\usr\AppData\Local\Microsoft\Microsoft SQL Server Local DB\Instances\LocalDBApp1
 ```
 ## RDLC 教学大纲
-- Basic reports          
 
-![](https://github.com/eddylin2015/RDLC_Report_Design_View/blob/main/img/RepProperty.png.jpg?raw=true)
+### Basic reports          
+
+#### Rep Property
+
+![RepProperty](https://github.com/eddylin2015/RDLC_Report_Design_View/blob/main/img/RepProperty.png?raw=true)
+
 ```cmd
 margin 0.2in 
 The A4 size paper measures 210 by 297 millimeters (8.27 in × 11.7 in)
