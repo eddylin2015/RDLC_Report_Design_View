@@ -42,6 +42,10 @@ REM C:\Users\usr\AppData\Local\Microsoft\Microsoft SQL Server Local DB\Instances
 ```
 ## RDLC 教学大纲
 - Basic reports          
+
+[page margin](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs?view=sql-server-ver17)
+
+![](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/media/rspagemargins.gif?view=sql-server-ver17)
 ```js
 // "Report" -> "Report Properties"
 var setup = frmReport.reportViewer1.GetPageSettings();           
