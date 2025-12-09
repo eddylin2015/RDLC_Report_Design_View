@@ -58,7 +58,8 @@ frmReport.reportViewer1.SetPageSettings(setup);
 [WinForms ReportViewer control](https://learn.microsoft.com/en-us/sql/reporting-services/application-integration/using-the-winforms-reportviewer-control?view=sql-server-ver17)
 
 ![](https://learn.microsoft.com/en-us/sql/reporting-services/application-integration/media/windows-app-local-report-settings.png?view=sql-server-ver17)
->>>>>>> 8349e9d390b8d9208cac77ef1c12a62d0c6e4b4d
+
+
 
 - Data sources and datasets
 - Tables                 
