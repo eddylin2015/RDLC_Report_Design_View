@@ -42,6 +42,10 @@ REM C:\Users\usr\AppData\Local\Microsoft\Microsoft SQL Server Local DB\Instances
 ```
 ## RDLC 教学大纲
 - Basic reports          
+
++ 2 pages: size: 7.9in 18.8in
++ 1 page inner : 7.7in 9.0 in
+
 - Data sources and datasets
 - Tables                 
 - Grouping
