@@ -53,6 +53,10 @@ setup.Margins = new System.Drawing.Printing.Margins(1, 1, 1, 1);
 frmReport.reportViewer1.SetPageSettings(setup);
 ```
 
+[WinForms ReportViewer control](https://learn.microsoft.com/en-us/sql/reporting-services/application-integration/using-the-winforms-reportviewer-control?view=sql-server-ver17)
+
+![](https://learn.microsoft.com/en-us/sql/reporting-services/application-integration/media/windows-app-local-report-settings.png?view=sql-server-ver17)
+
 - Data sources and datasets
 - Tables                 
 - Grouping
