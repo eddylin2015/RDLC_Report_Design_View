@@ -43,8 +43,13 @@ REM C:\Users\usr\AppData\Local\Microsoft\Microsoft SQL Server Local DB\Instances
 ## RDLC 教学大纲
 - Basic reports          
 
-+ 2 pages: size: 7.9in 18.8in
-+ 1 page inner : 7.7in 9.0 in
+![](https://github.com/eddylin2015/RDLC_Report_Design_View/blob/main/img/RepProperty.png.jpg?raw=true)
+```cmd
+margin 0.2in 
+The A4 size paper measures 210 by 297 millimeters (8.27 in × 11.7 in)
+2 pages: size: 7.9in 18.8in
+1 page inner : 7.7in 9.0 in
+```
 
 [page margin](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs?view=sql-server-ver17)
 
@@ -97,3 +102,38 @@ Change the font to Wingdings, and use an expression.
 - https://wenku.baidu.com/view/f47cb8bdf121dd36a32d825f.html?_wkts_=1764582882164&needWelcomeRecommand=1
 - https://www.cnblogs.com/SkySoot/archive/2011/11/24/2261952.html
 - https://lawrencetech.blogspot.com/2013/12/netpdf_6.html
+
+## git Merge
+```cmd
+(env) c:\code\fileshare\www\RDLC_Report_Design_View>git pull
+Updating 4f3fe0a..2b0b862
+error: Your local changes to the following files would be overwritten by merge:
+        README.md
+Please commit your changes or stash them before you merge.
+Aborting
+
+(env) c:\code\fileshare\www\RDLC_Report_Design_View>git add .
+
+(env) c:\code\fileshare\www\RDLC_Report_Design_View>git commit -m "merge readme"
+[main 1de82f9] merge readme
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+(env) c:\code\fileshare\www\RDLC_Report_Design_View>git merge
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+
+(env) c:\code\fileshare\www\RDLC_Report_Design_View>code README.md
+
+(env) c:\code\fileshare\www\RDLC_Report_Design_View>git add .
+
+(env) c:\code\fileshare\www\RDLC_Report_Design_View>git commit -m "marge fix"
+[main 5d719df] marge fix
+
+(env) c:\code\fileshare\www\RDLC_Report_Design_View>git push
+Writing objects: 100% (6/6), 576 bytes | 576.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To https://github.com/eddylin2015/RDLC_Report_Design_View.git
+   2b0b862..5d719df  main -> main
+```
