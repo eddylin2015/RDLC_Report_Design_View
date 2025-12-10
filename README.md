@@ -92,6 +92,9 @@ frmReport.reportViewer1.SetPageSettings(setup);
 [add-grouping-totals](https://learn.microsoft.com/en-us/sql/reporting-services/tutorial-step-06-add-grouping-totals-reporting-services?view=sql-server-ver17)
 ![add-grouping-totals](https://learn.microsoft.com/en-us/sql/reporting-services/media/rs-basictablesumgrandtotalpreview.gif?view=sql-server-ver17)
 #### 課五.Expressions    
+
+- Using Simple Expressions
+- Using Complex Expressions
 [Expression uses in paginated reports (Report Builder)](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/expression-uses-in-reports-report-builder-and-ssrs?view=sql-server-ver17)
 [Expression reference in a paginated report (Report Builder)](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/expression-reference-report-builder-and-ssrs?view=sql-server-ver17)
 
