@@ -4,3 +4,4 @@ debug/
 *.rdl*
 packages/
 .vs/
+SqlServerTypes/
