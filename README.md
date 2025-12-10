@@ -125,9 +125,11 @@ Change the font to Wingdings, and use an expression. checkmark in the box
 #### 課十一.Graphical indicators
 [Indicators](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/indicators-report-builder-and-ssrs?view=sql-server-ver17)
 ![Indicators](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/media/rs-indicatortabletrafficlight.gif?view=sql-server-ver17)
-#### 課十二.Lists         
 
-[video SSRS -- Using a List Item to Display Details](https://www.youtube.com/watch?v=h8EidVXasYg)
+#### 課十二.Lists         
+![List](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/media/rs-basiclistformdesign.gif?view=sql-server-ver17)
+[Create invoices and forms with lists in a paginated report (Report Builder)](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/create-invoices-and-forms-with-lists-report-builder-and-ssrs?view=sql-server-ver17)
+
 #### 課十三.Subreports  
 
 [sub rep](https://cloud.tencent.com/developer/article/2444311)
