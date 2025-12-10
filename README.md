@@ -116,11 +116,11 @@ Change the font to Wingdings, and use an expression. checkmark in the box
 [video SSRS -- Using a List Item to Display Details](https://www.youtube.com/watch?v=h8EidVXasYg)
 #### 課十三.Subreports  
 
-https://cloud.tencent.com/developer/article/2444311
+[sub rep](https://cloud.tencent.com/developer/article/2444311)
 
 #### 課十四.Drill-through reports  
 
-https://blog.csdn.net/GoodShot/article/details/8195690
+[drill through](https://blog.csdn.net/GoodShot/article/details/8195690)
 
 ```js
 private void reportViewer1_Drillthrough(object sender, DrillthroughEventArgs e)
