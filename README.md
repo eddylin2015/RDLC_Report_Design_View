@@ -137,7 +137,8 @@ Change the font to Wingdings, and use an expression. checkmark in the box
 [sub rep](https://cloud.tencent.com/developer/article/2444311)
 
 #### 課十四.Drill-through reports  
-
+![](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/media/rs-drillthru.gif?view=sql-server-ver17)
+[link next page](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/drillthrough-reports-report-builder-and-ssrs?view=sql-server-ver17)
 [drill through](https://blog.csdn.net/GoodShot/article/details/8195690)
 
 ```js
