@@ -12,8 +12,9 @@
 
 ## 基礎知識
 
+- 初级 HTML,XML標籤認識
 - 初级 C#， Console，WinForm，Dll
-- 中级 Mysql, DataSet
+- 中级 sqlLocalDB, DataSet
 - 晋级 Edge-JS, pythonnet 
   
 ## 工具
@@ -43,8 +44,10 @@ REM C:\Users\usr\AppData\Local\Microsoft\Microsoft SQL Server Local DB\Instances
 ```
 ## RDLC 教学大纲
 
-#### Basic reports          
+#### 課一. Basic reports          
+[使用 Report Builder 打开和编辑 RDLC 文件](https://my.oschina.net/emacs_9380709/blog/18461026)
 
+- Page set-up
 Report Property : 
 
 ![RepProperty](https://github.com/eddylin2015/RDLC_Report_Design_View/blob/main/img/RepProperty.png?raw=true)
@@ -72,36 +75,75 @@ frmReport.reportViewer1.SetPageSettings(setup);
 
 ![](https://learn.microsoft.com/en-us/sql/reporting-services/application-integration/media/windows-app-local-report-settings.png?view=sql-server-ver17)
 
-#### Data sources and datasets
-#### Tables                 
-#### Grouping
-#### Expressions            
-#### Page set-up
-#### Exporting reports      
-#### Parameters
-#### Matrices               
-#### Charts
-#### Miniature charts       
-#### Graphical indicators
-#### Lists                  
-#### Subreports  
-#### Drill-through reports  
-#### The SSRS web portal
+#### 課二.Data sources and datasets
+[report-datasets](https://learn.microsoft.com/en-us/sql/reporting-services/report-data/report-datasets-ssrs?view=sql-server-ver17)
+![report-datasets](https://learn.microsoft.com/en-us/sql/reporting-services/report-data/media/rs-datadesignandpreview.gif?view=sql-server-ver17)
+#### 課三.Tables      
+[reports-multiple-tables](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-walktrough-designing-reports-multiple-tables)
+[one-to-many](https://stackoverflow.com/questions/48843956/creating-an-rdlc-report-with-multiple-tables-one-to-many-relationship)           
+#### 課四.Grouping
+[add-grouping-totals](https://learn.microsoft.com/en-us/sql/reporting-services/tutorial-step-06-add-grouping-totals-reporting-services?view=sql-server-ver17)
+![add-grouping-totals](https://learn.microsoft.com/en-us/sql/reporting-services/media/rs-basictablesumgrandtotalpreview.gif?view=sql-server-ver17)
+#### 課五.Expressions         
+
+- Display Booleans on an RDLC Report
+
+Change the font to Wingdings, and use an expression. checkmark in the box
+
+=iif(Fields!FieldName.Value, ChrW(254), Chr(111)) 
+
+#### 課六.Exporting reports      
+[RDLC - Export Directly to Word, Excel or PDF from Code](https://www.codeproject.com/articles/RDLC-Export-Directly-to-Word-Excel-or-PDF-from-Cod#comments-section)
+#### 課七.Parameters
+[rdlc-passing-multiple-parameters](https://learn.microsoft.com/en-us/answers/questions/361199/rdlc-passing-multiple-parameters)
+#### 課八.Matrices              
+
+![Tutorial: Create a matrix report (Report Builder)](https://learn.microsoft.com/en-us/sql/reporting-services/media/report-builder-matrix-tutorial.png?view=sql-server-ver17)
 
 
-### Display Booleans on an RDLC Report
 
-Change the font to Wingdings, and use an expression.
+#### 課九.Charts
+[charts](https://www.c-sharpcorner.com/UploadFile/4d9083/how-to-create-rdlc-charts-and-complete-series-of-all-charts/)
+#### 課十.Miniature charts       
 
-=iif(Fields!FieldName.Value, ChrW(254), Chr(111)) If the boolean is true, you will get a checkmark in the box, otherwise you will get an empty box.
+#### 課十一.Graphical indicators
+[Indicators](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/indicators-report-builder-and-ssrs?view=sql-server-ver17)
+![Indicators](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/media/rs-indicatortabletrafficlight.gif?view=sql-server-ver17)
+#### 課十二.Lists         
 
-## 附加题
+[video SSRS -- Using a List Item to Display Details](https://www.youtube.com/watch?v=h8EidVXasYg)
+#### 課十三.Subreports  
 
-[ex1:PeriodicTable, Generating RDLC Dynamically](https://www.codeproject.com/articles/Generating-RDLC-Dynamically-for-the-Report-Viewer-#comments-section)
+https://cloud.tencent.com/developer/article/2444311
+
+#### 課十四.Drill-through reports  
+
+https://blog.csdn.net/GoodShot/article/details/8195690
+
+```js
+private void reportViewer1_Drillthrough(object sender, DrillthroughEventArgs e)
+    {
+        Microsoft.Reporting.WinForms.ReportDataSource dataSrc = new Microsoft.Reporting.WinForms.ReportDataSource();
+        dataSrc.Name = "DataSet1";
+        dataSrc.Value = this.DataTable1BindingSource;
+        LocalReport localReport = (LocalReport)e.Report;
+        localReport.DataSources.Add(dataSrc);
+    }
+```    
+#### 課十五.The SSRS web portal
+
+
+## 附加
+
+[ex1:Lesson 4 Creating Code to Generate the Report Definition File](https://learn.microsoft.com/en-us/previous-versions/sql/sql-server-2008-r2/ms170239(v=sql.105)?redirectedfrom=MSDN)
+- 修改NameSpace RDL 2005版改為2008版
+- body升高二層, 移除ReportSections ReportSection
+[ex2:PeriodicTable, Generating RDLC Dynamically](https://www.codeproject.com/articles/Generating-RDLC-Dynamically-for-the-Report-Viewer-#comments-section)
 ![PeriodicTable](https://github.com/eddylin2015/RDLC_Report_Design_View/blob/main/img/PeriodicTable.png?raw=true)
 - RDL 2005版改為2008版
 - 修改 Report.cs
 - 修改 PeriodicTableReportGenerator.cs
+- 修改 Report1.rdlc
 
 ## 參考:
 
@@ -115,6 +157,8 @@ Change the font to Wingdings, and use an expression.
 - https://wenku.baidu.com/view/f47cb8bdf121dd36a32d825f.html?_wkts_=1764582882164&needWelcomeRecommand=1
 - https://www.cnblogs.com/SkySoot/archive/2011/11/24/2261952.html
 - https://lawrencetech.blogspot.com/2013/12/netpdf_6.html
+
+## git 教學
 
 ## git Merge
 
