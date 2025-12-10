@@ -112,8 +112,16 @@ Change the font to Wingdings, and use an expression. checkmark in the box
 
 #### 課九.Charts
 [charts](https://www.c-sharpcorner.com/UploadFile/4d9083/how-to-create-rdlc-charts-and-complete-series-of-all-charts/)
-#### 課十.Miniature charts       
+![chars](https://learn.microsoft.com/en-us/sql/reporting-services/media/report-builder-column-chart-tutorial.png?view=sql-server-ver17)
 
+#### 課十.sparklines charts    
+
+[Tutorial: Add a sparkline to your report (Report Builder)](https://learn.microsoft.com/en-us/sql/reporting-services/tutorial-add-a-sparkline-to-your-report-report-builder?view=sql-server-ver17)
+[](https://learn.microsoft.com/en-us/sql/reporting-services/media/report-builder-kpi-report.png?view=sql-server-ver17)
+
+![sparklines charts](https://learn.microsoft.com/en-us/sql/reporting-services/media/report-builder-sparkline-final.png?view=sql-server-ver17)
+
+![Tutorial: Add a KPI to your report (Report Builder)](https://learn.microsoft.com/en-us/sql/reporting-services/media/report-builder-kpi-report.png?view=sql-server-ver17)
 #### 課十一.Graphical indicators
 [Indicators](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/indicators-report-builder-and-ssrs?view=sql-server-ver17)
 ![Indicators](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/media/rs-indicatortabletrafficlight.gif?view=sql-server-ver17)
