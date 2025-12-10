@@ -21,7 +21,7 @@
             var body = new Body();
             body.AddReportItem(mainTable);
             body.AddReportItem(subTable);
-            this.Report.AddBody(body);
+            this.Report.AddBody(body);  //cool add 
             //this.Report.AddReportSection(new ReportSection(body));
 
             this.Report.AddDataSet(dataSetForMainTable);

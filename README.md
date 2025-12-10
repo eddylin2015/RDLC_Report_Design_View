@@ -30,8 +30,12 @@ https://www.microsoft.com/en-us/download/details.aspx?id=53613
 ## C# Basics Tutorial for Beginners (采用 Deepseek 教程)
 ## C# WinForms Tutorial
 ## SQL LocalDB and DataSet in C# WinForms
-[localdb](https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-express-localdb?view=sql-server-ver17)
-[ssms](https://learn.microsoft.com/en-us/ssms/install/install)
+
+[本地資料庫localdb](https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-express-localdb?view=sql-server-ver17)
+
+[管理工具ssms](https://learn.microsoft.com/en-us/ssms/install/install)
+
+![ssms](https://github.com/eddylin2015/RDLC_Report_Design_View/blob/main/img/ssms.png?raw=true)
 ```CMD
 rem C:\Program Files\Microsoft SQL Server\160\Tools\Binn\
 REM Create an instance of LocalDB
@@ -134,20 +138,33 @@ using (FileStream fs = new FileStream("output.pdf", FileMode.Create))
 
 #### 課九.Charts
 [charts](https://www.c-sharpcorner.com/UploadFile/4d9083/how-to-create-rdlc-charts-and-complete-series-of-all-charts/)
-#### 課十.Miniature charts       
+![chars](https://learn.microsoft.com/en-us/sql/reporting-services/media/report-builder-column-chart-tutorial.png?view=sql-server-ver17)
 
+#### 課十.sparklines charts    
+
+[Tutorial: Add a sparkline to your report (Report Builder)](https://learn.microsoft.com/en-us/sql/reporting-services/tutorial-add-a-sparkline-to-your-report-report-builder?view=sql-server-ver17)
+[](https://learn.microsoft.com/en-us/sql/reporting-services/media/report-builder-kpi-report.png?view=sql-server-ver17)
+
+![sparklines charts](https://learn.microsoft.com/en-us/sql/reporting-services/media/report-builder-sparkline-final.png?view=sql-server-ver17)
+
+![Tutorial: Add a KPI to your report (Report Builder)](https://learn.microsoft.com/en-us/sql/reporting-services/media/report-builder-kpi-report.png?view=sql-server-ver17)
 #### 課十一.Graphical indicators
 [Indicators](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/indicators-report-builder-and-ssrs?view=sql-server-ver17)
 ![Indicators](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/media/rs-indicatortabletrafficlight.gif?view=sql-server-ver17)
-#### 課十二.Lists         
 
-[video SSRS -- Using a List Item to Display Details](https://www.youtube.com/watch?v=h8EidVXasYg)
+#### 課十二.Lists         
+![List](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/media/rs-basiclistformdesign.gif?view=sql-server-ver17)
+[Create invoices and forms with lists in a paginated report (Report Builder)](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/create-invoices-and-forms-with-lists-report-builder-and-ssrs?view=sql-server-ver17)
+
 #### 課十三.Subreports  
 
+![subreport](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/media/rs-subreport.gif?view=sql-server-ver17)
+[subreport](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/subreports-report-builder-and-ssrs?view=sql-server-ver17)
 [sub rep](https://cloud.tencent.com/developer/article/2444311)
 
 #### 課十四.Drill-through reports  
-
+![](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/media/rs-drillthru.gif?view=sql-server-ver17)
+[link next page](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/drillthrough-reports-report-builder-and-ssrs?view=sql-server-ver17)
 [drill through](https://blog.csdn.net/GoodShot/article/details/8195690)
 
 ```js
@@ -207,7 +224,24 @@ For a free edition, choose either Evaluation or Developer.
 - https://www.cnblogs.com/SkySoot/archive/2011/11/24/2261952.html
 - https://lawrencetech.blogspot.com/2013/12/netpdf_6.html
 
-## git 教學
+## git 常用指令
+[Git for Windows/x64 Setup](https://git-scm.com/install/windows)
+```cmd
+# 克隆源碼
+git clone https://github.com/eddylin2015/RDLC_Report_Design_View.git
+
+# 如果有編輯權限
+git add .
+git commit -m "update"
+git push
+# pull 來自github版本
+git pull
+git add .
+git commit -m "update"
+git push
+# 有不同版本出現, 合並源碼
+git merge
+```
 
 ## git Merge
 
