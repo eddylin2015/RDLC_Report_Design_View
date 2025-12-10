@@ -27,7 +27,8 @@ https://www.microsoft.com/en-us/download/details.aspx?id=53613
 ## C# Basics Tutorial for Beginners (采用 Deepseek 教程)
 ## C# WinForms Tutorial
 ## SQL LocalDB and DataSet in C# WinForms
-https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-express-localdb?view=sql-server-ver17
+[localdb](https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-express-localdb?view=sql-server-ver17)
+[ssms](https://learn.microsoft.com/en-us/ssms/install/install)
 ```CMD
 rem C:\Program Files\Microsoft SQL Server\160\Tools\Binn\
 REM Create an instance of LocalDB
@@ -47,6 +48,7 @@ REM C:\Users\usr\AppData\Local\Microsoft\Microsoft SQL Server Local DB\Instances
 Report Property : 
 
 ![RepProperty](https://github.com/eddylin2015/RDLC_Report_Design_View/blob/main/img/RepProperty.png?raw=true)
+
 
 ```cmd
 margin 0.2in 
@@ -95,7 +97,11 @@ Change the font to Wingdings, and use an expression.
 
 ## 附加题
 
-[advance sample1:Generating RDLC Dynamically](https://www.codeproject.com/articles/Generating-RDLC-Dynamically-for-the-Report-Viewer-#comments-section)
+[ex1:PeriodicTable, Generating RDLC Dynamically](https://www.codeproject.com/articles/Generating-RDLC-Dynamically-for-the-Report-Viewer-#comments-section)
+![PeriodicTable](https://github.com/eddylin2015/RDLC_Report_Design_View/blob/main/img/PeriodicTable.png?raw=true)
+- RDL 2005版改為2008版
+- 修改 Report.cs
+- 修改 PeriodicTableReportGenerator.cs
 
 ## 參考:
 

@@ -4,3 +4,8 @@ debug/
 *.rdl*
 packages/
 .vs/
+*.dll
+RDLCForm/SqlServerTypes/x64/SqlServerSpatial140.dll
+RDLCForm/SqlServerTypes/x64/msvcr120.dll
+RDLCForm/SqlServerTypes/x86/SqlServerSpatial140.dll
+RDLCForm/SqlServerTypes/x86/msvcr120.dll
