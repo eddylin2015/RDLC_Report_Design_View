@@ -79,12 +79,14 @@ frmReport.reportViewer1.SetPageSettings(setup);
 [report-datasets](https://learn.microsoft.com/en-us/sql/reporting-services/report-data/report-datasets-ssrs?view=sql-server-ver17)
 ![report-datasets](https://learn.microsoft.com/en-us/sql/reporting-services/report-data/media/rs-datadesignandpreview.gif?view=sql-server-ver17)
 #### 課三.Tables      
+![](https://i.sstatic.net/6a5ck.png)
 [reports-multiple-tables](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-walktrough-designing-reports-multiple-tables)
 [one-to-many](https://stackoverflow.com/questions/48843956/creating-an-rdlc-report-with-multiple-tables-one-to-many-relationship)           
 #### 課四.Grouping
 [add-grouping-totals](https://learn.microsoft.com/en-us/sql/reporting-services/tutorial-step-06-add-grouping-totals-reporting-services?view=sql-server-ver17)
 ![add-grouping-totals](https://learn.microsoft.com/en-us/sql/reporting-services/media/rs-basictablesumgrandtotalpreview.gif?view=sql-server-ver17)
 #### 課五.Expressions         
+[RDLC 报表系列（三） 参数、常量及常用表达式的使用](https://blog.csdn.net/weilu0328/article/details/5709436)
 
 - Display Booleans on an RDLC Report
 
