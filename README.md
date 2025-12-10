@@ -193,7 +193,24 @@ For a free edition, choose either Evaluation or Developer.
 - https://www.cnblogs.com/SkySoot/archive/2011/11/24/2261952.html
 - https://lawrencetech.blogspot.com/2013/12/netpdf_6.html
 
-## git 教學
+## git 常用指令
+[Git for Windows/x64 Setup](https://git-scm.com/install/windows)
+```cmd
+# 克隆源碼
+git clone https://github.com/eddylin2015/RDLC_Report_Design_View.git
+
+# 如果有編輯權限
+git add .
+git commit -m "update"
+git push
+# pull 來自github版本
+git pull
+git add .
+git commit -m "update"
+git push
+# 有不同版本出現, 合並源碼
+git merge
+```
 
 ## git Merge
 
