@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lesson1RdlGenerator", "less
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RDLCForm", "RDLCForm\RDLCForm.csproj", "{58041942-3935-45E1-A0A2-345382677B81}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormDataGrid", "WinFormDataGrid\WinFormDataGrid.csproj", "{37A2302E-04C8-492E-9E94-B00663DE9953}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{58041942-3935-45E1-A0A2-345382677B81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58041942-3935-45E1-A0A2-345382677B81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58041942-3935-45E1-A0A2-345382677B81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37A2302E-04C8-492E-9E94-B00663DE9953}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37A2302E-04C8-492E-9E94-B00663DE9953}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37A2302E-04C8-492E-9E94-B00663DE9953}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37A2302E-04C8-492E-9E94-B00663DE9953}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

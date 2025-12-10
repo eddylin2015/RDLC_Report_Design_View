@@ -4,13 +4,13 @@
 
 职业技能培訓課程,學時短,學習快,有成效,能動手完成任務。
 
-電腦程式职业技能，即吃即用，快吃又有營養，技能入門，給你0到1的體驗。
+電腦程式职业技能，即学即用，快吃又有營養，技能入門，給你0到1的體驗。
 
 幫助同學提高趣味感和成就感,電腦程式必備技能顧及技術堆叠，不会过时。
 
 学完体验课程，衔接职业培训中心CM课程, 跟资深导师继续深造。
 
-这里混合了多种编程C#, JS, Python.以易用实用为主。
+混合了多种编程C#, JS, Python以易用实用为主。
 
 ## 基礎知識
 
@@ -20,16 +20,20 @@
 - 晋级 Edge-JS, pythonnet 
   
 ## 工具
+
 - Microsoft RDLC Report Designer
+
 https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftRdlcReportDesignerforVisualStudio-18001
 - ReportViewerControl.Winforms
+
 NuGet\Install-Package Microsoft.ReportingServices.ReportViewerControl.Winforms -Version 150.1652.0
 - Install Microsoft Report Builder
+
 https://www.microsoft.com/en-us/download/details.aspx?id=53613
 
-## C# Basics Tutorial for Beginners (采用 Deepseek 教程)
-## C# WinForms Tutorial
 ## SQL LocalDB and DataSet in C# WinForms
+
+- Task 创建DB及TABLE
 
 [本地資料庫localdb](https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-express-localdb?view=sql-server-ver17)
 
@@ -48,6 +52,11 @@ REM Server=(localdb)\\LocalDBApp1;Integrated Security=true
 REM Server=(localdb)\\LocalDBApp1;Initial Catalog=mydb;Integrated Security=true
 REM C:\Users\usr\AppData\Local\Microsoft\Microsoft SQL Server Local DB\Instances\LocalDBApp1
 ```
+
+- Task C# WinForm DataGridView and DataGridNavigator
+
+![WinFormDataGrid](https://github.com/eddylin2015/RDLC_Report_Design_View/blob/main/img/WinFormDataGrid.png?raw=true)
+
 ## RDLC 教学大纲
 
 #### 課一. Basic reports          
@@ -97,6 +106,7 @@ frmReport.reportViewer1.SetPageSettings(setup);
 - Using Complex Expressions
 
 [Expression uses in paginated reports (Report Builder)](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/expression-uses-in-reports-report-builder-and-ssrs?view=sql-server-ver17)
+
 [Expression reference in a paginated report (Report Builder)](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/expression-reference-report-builder-and-ssrs?view=sql-server-ver17)
 
 [RDLC 报表系列（三） 参数、常量及常用表达式的使用](https://blog.csdn.net/weilu0328/article/details/5709436)
@@ -134,11 +144,33 @@ using (FileStream fs = new FileStream("output.pdf", FileMode.Create))
 
 [RDLC - Export Directly to Word, Excel or PDF from Code](https://www.codeproject.com/articles/RDLC-Export-Directly-to-Word-Excel-or-PDF-from-Cod#comments-section)
 #### 課七.Parameters
-![rdlcparameters](https://github.com/eddylin2015/RDLC_Report_Design_View/blob/main/img/rdlcparameters.png?raw=true)
+[Paginated report parameters in Report Builder](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/report-parameters-report-builder-and-report-designer?view=sql-server-ver17)
+```js
+using Microsoft.Reporting.WinForms; // For WinForms applications
+
+// ... inside your form or page where the ReportViewer is located
+
+// Create a list or array of ReportParameter objects
+List<ReportParameter> parameters = new List<ReportParameter>();
+
+// Add individual parameters
+parameters.Add(new ReportParameter("CustomerID", "123")); // Name and Value
+parameters.Add(new ReportParameter("ReportTitle", "Sales Report for Q4"));
+
+// Set the parameters to the LocalReport
+reportViewer1.LocalReport.SetParameters(parameters);
+
+// Refresh the report to display with the new parameters
+reportViewer1.RefreshReport();
+```
+
+![Dataset query or stored procedure with parameters](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/media/ssrb-paramdatasetprops.png?view=sql-server-ver17)
+
 
 [rdlc-passing-multiple-parameters](https://learn.microsoft.com/en-us/answers/questions/361199/rdlc-passing-multiple-parameters)
 
 [建立具有參數的鑽研 (RDLC) 報表](https://learn.microsoft.com/zh-tw/sql/reporting-services/create-drillthrough-rdlc-report-with-parameters-reportviewer?view=sql-server-ver16)
+
 #### 課八.Matrices              
 
 ![Tutorial: Create a matrix report (Report Builder)](https://learn.microsoft.com/en-us/sql/reporting-services/media/report-builder-matrix-tutorial.png?view=sql-server-ver17)
@@ -220,7 +252,8 @@ For a free edition, choose either Evaluation or Developer.
 
 ## 參考:
 [教學課程：建立基本資料表報表 (報表產生器)](https://learn.microsoft.com/zh-tw/sql/reporting-services/tutorial-creating-a-basic-table-report-report-builder?view=sql-server-ver17&source=recommendations)
-[report-design](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/data-regions-and-maps-report-builder-and-ssrs?view=sql-server-ver17)
+
+[Data regions and maps in a paginated report (Report Builder)](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/data-regions-and-maps-report-builder-and-ssrs?view=sql-server-ver17)
 
 ## 網上資料
 
