@@ -134,7 +134,17 @@ private void reportViewer1_Drillthrough(object sender, DrillthroughEventArgs e)
 ```    
 #### 課十五.The SSRS web portal
 
+Install SSRS
+
+Use the following steps to install SSRS.
+
+Locate SQLServerReportingServices.exe and launch the installer.
+
+For a free edition, choose either Evaluation or Developer.
+![SSRS free edition](https://learn.microsoft.com/en-us/sql/reporting-services/install-windows/media/install-reporting-services/report-server-install-edition-select.png?view=sql-server-ver17)
+
 自制網站.參考RdlcRender + RdlcJs.html2pdf
+
 - express.js
 - Edge-JS
 - pdf.js
