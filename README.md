@@ -91,7 +91,10 @@ frmReport.reportViewer1.SetPageSettings(setup);
 #### 課四.Grouping
 [add-grouping-totals](https://learn.microsoft.com/en-us/sql/reporting-services/tutorial-step-06-add-grouping-totals-reporting-services?view=sql-server-ver17)
 ![add-grouping-totals](https://learn.microsoft.com/en-us/sql/reporting-services/media/rs-basictablesumgrandtotalpreview.gif?view=sql-server-ver17)
-#### 課五.Expressions         
+#### 課五.Expressions    
+[Expression uses in paginated reports (Report Builder)](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/expression-uses-in-reports-report-builder-and-ssrs?view=sql-server-ver17)
+[Expression reference in a paginated report (Report Builder)](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/expression-reference-report-builder-and-ssrs?view=sql-server-ver17)
+
 [RDLC 报表系列（三） 参数、常量及常用表达式的使用](https://blog.csdn.net/weilu0328/article/details/5709436)
 
 - Display Booleans on an RDLC Report
@@ -127,6 +130,8 @@ using (FileStream fs = new FileStream("output.pdf", FileMode.Create))
 
 [RDLC - Export Directly to Word, Excel or PDF from Code](https://www.codeproject.com/articles/RDLC-Export-Directly-to-Word-Excel-or-PDF-from-Cod#comments-section)
 #### 課七.Parameters
+![rdlcparameters](https://github.com/eddylin2015/RDLC_Report_Design_View/blob/main/img/rdlcparameters.png?raw=true)
+
 [rdlc-passing-multiple-parameters](https://learn.microsoft.com/en-us/answers/questions/361199/rdlc-passing-multiple-parameters)
 
 [建立具有參數的鑽研 (RDLC) 報表](https://learn.microsoft.com/zh-tw/sql/reporting-services/create-drillthrough-rdlc-report-with-parameters-reportviewer?view=sql-server-ver16)
