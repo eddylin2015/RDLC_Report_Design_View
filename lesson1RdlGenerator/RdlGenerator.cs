@@ -34,6 +34,8 @@ namespace lesson1RdlGenerator
                 this.GenerateRdl();
 
                 Console.WriteLine("RDL file generated successfully.");
+                WriteABC("Report1.rdl");
+                Console.WriteLine("RDLC file generated successfully.");
             }
 
             catch (Exception exception)
@@ -44,8 +46,20 @@ namespace lesson1RdlGenerator
             finally
             {
                 // Close the connection string
-                //m_connection.Close();
+                m_connection.Close();
             }
+        }
+        static void WriteABC(string filename)
+        {
+            string tempfile = Path.GetTempFileName();
+            using (var writer = new StreamWriter(tempfile))
+            using (var reader = new StreamReader(filename))
+            {
+                writer.WriteLine("<?xml version =\"1.0\" encoding=\"utf-8\"?>");
+                while (!reader.EndOfStream)
+                    writer.WriteLine(reader.ReadLine());
+            }
+            File.Copy(tempfile, filename, true);
         }
 
         public void OpenConnection()
@@ -54,11 +68,11 @@ namespace lesson1RdlGenerator
                 // Create a connection object
                 m_connection = new SqlConnection();
 
-                // Create the connection string
-                m_connectString = @"Server=(localdb)\LocalDBApp1;Initial Catalog=mydb;Integrated Security=true";
-                m_connection.ConnectionString = m_connectString;
-                // Open the connection
-                m_connection.Open();
+            // Create the connection string
+            m_connectString = @"Server=(localdb)\LocalDBApp1;Initial Catalog=mydb;Integrated Security=true";
+            m_connection.ConnectionString = m_connectString;
+            // Open the connection
+            m_connection.Open();
         }
 
         public void GenerateFieldsList()
