@@ -96,10 +96,36 @@ Change the font to Wingdings, and use an expression. checkmark in the box
 
 =iif(Fields!FieldName.Value, ChrW(254), Chr(111)) 
 
-#### 課六.Exporting reports      
+#### 課六.Exporting reports    
+
+- Preview (HTML-like, Soft Page-Break)
+- Print (Hard Page-Break)
+- PDF (Hard Page-Break)
+- Word (Soft Page-Break)
+- Excel (Soft Page-Break)
+
+```js
+Warning[] warnings;
+string[] streamids;
+string mimeType;
+string encoding;
+string filenameExtension;
+
+byte[] bytes = reportViewer.LocalReport.Render(
+    "PDF", null, out mimeType, out encoding, out filenameExtension,
+    out streamids, out warnings);
+
+using (FileStream fs = new FileStream("output.pdf", FileMode.Create))
+{
+    fs.Write(bytes, 0, bytes.Length);
+}
+```
+
 [RDLC - Export Directly to Word, Excel or PDF from Code](https://www.codeproject.com/articles/RDLC-Export-Directly-to-Word-Excel-or-PDF-from-Cod#comments-section)
 #### 課七.Parameters
 [rdlc-passing-multiple-parameters](https://learn.microsoft.com/en-us/answers/questions/361199/rdlc-passing-multiple-parameters)
+
+[建立具有參數的鑽研 (RDLC) 報表](https://learn.microsoft.com/zh-tw/sql/reporting-services/create-drillthrough-rdlc-report-with-parameters-reportviewer?view=sql-server-ver16)
 #### 課八.Matrices              
 
 ![Tutorial: Create a matrix report (Report Builder)](https://learn.microsoft.com/en-us/sql/reporting-services/media/report-builder-matrix-tutorial.png?view=sql-server-ver17)
@@ -167,7 +193,7 @@ For a free edition, choose either Evaluation or Developer.
 - 修改 Report1.rdlc
 
 ## 參考:
-
+[教學課程：建立基本資料表報表 (報表產生器)](https://learn.microsoft.com/zh-tw/sql/reporting-services/tutorial-creating-a-basic-table-report-report-builder?view=sql-server-ver17&source=recommendations)
 [report-design](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/data-regions-and-maps-report-builder-and-ssrs?view=sql-server-ver17)
 
 ## 網上資料
