@@ -30,8 +30,12 @@ https://www.microsoft.com/en-us/download/details.aspx?id=53613
 ## C# Basics Tutorial for Beginners (采用 Deepseek 教程)
 ## C# WinForms Tutorial
 ## SQL LocalDB and DataSet in C# WinForms
-[localdb](https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-express-localdb?view=sql-server-ver17)
-[ssms](https://learn.microsoft.com/en-us/ssms/install/install)
+
+[本地資料庫localdb](https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-express-localdb?view=sql-server-ver17)
+
+[管理工具ssms](https://learn.microsoft.com/en-us/ssms/install/install)
+
+![ssms](https://github.com/eddylin2015/RDLC_Report_Design_View/blob/main/img/ssms.png?raw=true)
 ```CMD
 rem C:\Program Files\Microsoft SQL Server\160\Tools\Binn\
 REM Create an instance of LocalDB
