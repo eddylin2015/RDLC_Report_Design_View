@@ -134,12 +134,19 @@ private void reportViewer1_Drillthrough(object sender, DrillthroughEventArgs e)
 ```    
 #### 課十五.The SSRS web portal
 
+自制網站.參考RdlcRender + RdlcJs.html2pdf
+- express.js
+- Edge-JS
+- pdf.js
+
 
 ## 附加
 
 [ex1:Lesson 4 Creating Code to Generate the Report Definition File](https://learn.microsoft.com/en-us/previous-versions/sql/sql-server-2008-r2/ms170239(v=sql.105)?redirectedfrom=MSDN)
 - 修改NameSpace RDL 2005版改為2008版
 - body升高二層, 移除ReportSections ReportSection
+
+
 [ex2:PeriodicTable, Generating RDLC Dynamically](https://www.codeproject.com/articles/Generating-RDLC-Dynamically-for-the-Report-Viewer-#comments-section)
 ![PeriodicTable](https://github.com/eddylin2015/RDLC_Report_Design_View/blob/main/img/PeriodicTable.png?raw=true)
 - RDL 2005版改為2008版
@@ -148,6 +155,8 @@ private void reportViewer1_Drillthrough(object sender, DrillthroughEventArgs e)
 - 修改 Report1.rdlc
 
 ## 參考:
+
+[report-design](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/data-regions-and-maps-report-builder-and-ssrs?view=sql-server-ver17)
 
 ## 網上資料
 
