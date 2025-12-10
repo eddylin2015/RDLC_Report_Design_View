@@ -57,7 +57,7 @@ REM C:\Users\usr\AppData\Local\Microsoft\Microsoft SQL Server Local DB\Instances
 
 ![WinFormDataGrid](https://github.com/eddylin2015/RDLC_Report_Design_View/blob/main/img/WinFormDataGrid.png?raw=true)
 
-## RDLC 教学大纲
+## RDLC 实验任务
 
 #### 課一. Basic reports          
 
@@ -72,11 +72,11 @@ Report Property :
 ![RepProperty](https://github.com/eddylin2015/RDLC_Report_Design_View/blob/main/img/RepProperty.png?raw=true)
 
 > [!NOTE]
-> This is a note highlighting information users should consider.
-> margin 0.2in 
-> The A4 size paper measures 210 by 297 millimeters (8.27 in × 11.7 in)
-> 2 pages: size: 7.9in 18.8in
-> 1 page inner : 7.7in 9.0 in
+> This is a note highlighting information users should consider.   
+> margin 0.2in    
+> The A4 size paper measures 210 by 297 millimeters (8.27 in × 11.7 in)    
+> 2 pages: size: 7.9in 18.8in   
+> 1 page inner : 7.7in 9.0 in   
 
 [认识页面Margin](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs?view=sql-server-ver17)
 
