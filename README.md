@@ -31,7 +31,7 @@ NuGet\Install-Package Microsoft.ReportingServices.ReportViewerControl.Winforms -
 
 https://www.microsoft.com/en-us/download/details.aspx?id=53613
 
-## SQL LocalDB and DataSet in C# WinForms
+## SQL LocalDB and DataGrid in C# WinForms
 
 - Task 创建DB及TABLE
 
