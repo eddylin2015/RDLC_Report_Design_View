@@ -132,6 +132,8 @@ Change the font to Wingdings, and use an expression. checkmark in the box
 
 #### 課十三.Subreports  
 
+![subreport](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/media/rs-subreport.gif?view=sql-server-ver17)
+[subreport](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/subreports-report-builder-and-ssrs?view=sql-server-ver17)
 [sub rep](https://cloud.tencent.com/developer/article/2444311)
 
 #### 課十四.Drill-through reports  
