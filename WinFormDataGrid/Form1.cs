@@ -23,5 +23,10 @@ namespace WinFormDataGrid
             this.tbl1TableAdapter.Fill(this.mydbDataSet.Tbl1);
 
         }
+
+        private void tsl_RDLCRepClick(object sender, EventArgs e)
+        {
+
+        }
     }
 }

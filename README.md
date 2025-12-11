@@ -94,6 +94,9 @@ Report Property :
 [WinForms ReportViewer control](https://learn.microsoft.com/en-us/sql/reporting-services/application-integration/using-the-winforms-reportviewer-control?view=sql-server-ver17)
 
 ```js
+/*
+* 不使用代碼設定Margin, 請用Design GUI 
+*/
 var setup = frmReport.reportViewer1.GetPageSettings();           
 setup.Margins = new System.Drawing.Printing.Margins(1, 1, 1, 1);
 frmReport.reportViewer1.SetPageSettings(setup);
@@ -102,8 +105,11 @@ frmReport.reportViewer1.SetPageSettings(setup);
 - Task : Form1 >[RDLC 報表]
 
 ```js
-var form2=new Form2();
-from2.Show();
+private void tsl_RDLCRepClick(object sender, EventArgs e)
+{
+  var frmReport=new Form2();
+  frmReport.Show();
+}
 ```
 
 #### 課二. Parameters , Data sources and datasets
