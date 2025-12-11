@@ -1,6 +1,6 @@
 # RDLC_Report_Design_View
 
-## 微专业课程-进阶-45小时rdlc报表
+## 微专业课程-进阶-3小时rdlc报表
 
 职业技能培訓課程,學時短,學習快,有成效,能動手完成任務。
 
@@ -27,6 +27,7 @@ https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftRdlcRepo
 - ReportViewerControl.Winforms
 
 NuGet\Install-Package Microsoft.ReportingServices.ReportViewerControl.Winforms -Version 150.1652.0
+
 - Install Microsoft Report Builder
 
 https://www.microsoft.com/en-us/download/details.aspx?id=53613
@@ -40,6 +41,7 @@ https://www.microsoft.com/en-us/download/details.aspx?id=53613
 [管理工具ssms](https://learn.microsoft.com/en-us/ssms/install/install)
 
 ![ssms](https://github.com/eddylin2015/RDLC_Report_Design_View/blob/main/img/ssms.png?raw=true)
+
 ```CMD
 rem C:\Program Files\Microsoft SQL Server\160\Tools\Binn\
 REM Create an instance of LocalDB
@@ -57,9 +59,15 @@ REM C:\Users\usr\AppData\Local\Microsoft\Microsoft SQL Server Local DB\Instances
 
 ![WinFormDataGrid](https://github.com/eddylin2015/RDLC_Report_Design_View/blob/main/img/WinFormDataGrid.png?raw=true)
 
+- Task CRUD 更新资料至资料表
+
 ## RDLC 实验任务
 
 #### 課一. Basic reports          
+
+> [!NOTE]
+>  Microsoft RDLC Report Designer   
+>  NuGet\Install-Package Microsoft.ReportingServices.ReportViewerControl.Winforms -Version 150.1652.0
 
 - Task : create a rdlc 报表
 
@@ -72,36 +80,46 @@ Report Property :
 ![RepProperty](https://github.com/eddylin2015/RDLC_Report_Design_View/blob/main/img/RepProperty.png?raw=true)
 
 > [!NOTE]
-> This is a note highlighting information users should consider.   
+> "Report" -> "Report Properties"
 > margin 0.2in    
 > The A4 size paper measures 210 by 297 millimeters (8.27 in × 11.7 in)    
-> 2 pages: size: 7.9in 18.8in   
+> 1 pages: size: 7.9in 9.4in   
 > 1 page inner : 7.7in 9.0 in   
 
-[认识页面Margin](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs?view=sql-server-ver17)
+[认识页面 Margin](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs?view=sql-server-ver17)
 
+- Task : Form2 ReportViewerControl 
+
+![](https://learn.microsoft.com/en-us/sql/reporting-services/application-integration/media/windows-app-local-report-settings.png?view=sql-server-ver17)
+
+[WinForms ReportViewer control](https://learn.microsoft.com/en-us/sql/reporting-services/application-integration/using-the-winforms-reportviewer-control?view=sql-server-ver17)
 
 ```js
-// "Report" -> "Report Properties"
 var setup = frmReport.reportViewer1.GetPageSettings();           
 setup.Margins = new System.Drawing.Printing.Margins(1, 1, 1, 1);
 frmReport.reportViewer1.SetPageSettings(setup);
 ```
 
-[WinForms ReportViewer control](https://learn.microsoft.com/en-us/sql/reporting-services/application-integration/using-the-winforms-reportviewer-control?view=sql-server-ver17)
-
-![](https://learn.microsoft.com/en-us/sql/reporting-services/application-integration/media/windows-app-local-report-settings.png?view=sql-server-ver17)
-
 #### 課二.Data sources and datasets
+
 [report-datasets](https://learn.microsoft.com/en-us/sql/reporting-services/report-data/report-datasets-ssrs?view=sql-server-ver17)
+
 ![report-datasets](https://learn.microsoft.com/en-us/sql/reporting-services/report-data/media/rs-datadesignandpreview.gif?view=sql-server-ver17)
-#### 課三.Tables      
+
+#### 課三.Tables     
+
 ![](https://i.sstatic.net/6a5ck.png)
+
 [reports-multiple-tables](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-walktrough-designing-reports-multiple-tables)
+
 [one-to-many](https://stackoverflow.com/questions/48843956/creating-an-rdlc-report-with-multiple-tables-one-to-many-relationship)           
+
 #### 課四.Grouping
+
 [add-grouping-totals](https://learn.microsoft.com/en-us/sql/reporting-services/tutorial-step-06-add-grouping-totals-reporting-services?view=sql-server-ver17)
+
 ![add-grouping-totals](https://learn.microsoft.com/en-us/sql/reporting-services/media/rs-basictablesumgrandtotalpreview.gif?view=sql-server-ver17)
+
 #### 課五.Expressions    
 
 - Using Simple Expressions
@@ -133,7 +151,6 @@ string[] streamids;
 string mimeType;
 string encoding;
 string filenameExtension;
-
 byte[] bytes = reportViewer.LocalReport.Render(
     "PDF", null, out mimeType, out encoding, out filenameExtension,
     out streamids, out warnings);
@@ -145,29 +162,26 @@ using (FileStream fs = new FileStream("output.pdf", FileMode.Create))
 ```
 
 [RDLC - Export Directly to Word, Excel or PDF from Code](https://www.codeproject.com/articles/RDLC-Export-Directly-to-Word-Excel-or-PDF-from-Cod#comments-section)
+
 #### 課七.Parameters
+
 [Paginated report parameters in Report Builder](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/report-parameters-report-builder-and-report-designer?view=sql-server-ver17)
+
 ```js
 using Microsoft.Reporting.WinForms; // For WinForms applications
-
 // ... inside your form or page where the ReportViewer is located
-
 // Create a list or array of ReportParameter objects
 List<ReportParameter> parameters = new List<ReportParameter>();
-
 // Add individual parameters
 parameters.Add(new ReportParameter("CustomerID", "123")); // Name and Value
 parameters.Add(new ReportParameter("ReportTitle", "Sales Report for Q4"));
-
 // Set the parameters to the LocalReport
 reportViewer1.LocalReport.SetParameters(parameters);
-
 // Refresh the report to display with the new parameters
 reportViewer1.RefreshReport();
 ```
 
 ![Dataset query or stored procedure with parameters](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/media/ssrb-paramdatasetprops.png?view=sql-server-ver17)
-
 
 [rdlc-passing-multiple-parameters](https://learn.microsoft.com/en-us/answers/questions/361199/rdlc-passing-multiple-parameters)
 
@@ -177,37 +191,48 @@ reportViewer1.RefreshReport();
 
 ![Tutorial: Create a matrix report (Report Builder)](https://learn.microsoft.com/en-us/sql/reporting-services/media/report-builder-matrix-tutorial.png?view=sql-server-ver17)
 
-
-
 #### 課九.Charts
+
 [charts](https://www.c-sharpcorner.com/UploadFile/4d9083/how-to-create-rdlc-charts-and-complete-series-of-all-charts/)
+
 ![chars](https://learn.microsoft.com/en-us/sql/reporting-services/media/report-builder-column-chart-tutorial.png?view=sql-server-ver17)
 
 #### 課十.sparklines charts    
 
 [Tutorial: Add a sparkline to your report (Report Builder)](https://learn.microsoft.com/en-us/sql/reporting-services/tutorial-add-a-sparkline-to-your-report-report-builder?view=sql-server-ver17)
+
 [](https://learn.microsoft.com/en-us/sql/reporting-services/media/report-builder-kpi-report.png?view=sql-server-ver17)
 
 ![sparklines charts](https://learn.microsoft.com/en-us/sql/reporting-services/media/report-builder-sparkline-final.png?view=sql-server-ver17)
 
 ![Tutorial: Add a KPI to your report (Report Builder)](https://learn.microsoft.com/en-us/sql/reporting-services/media/report-builder-kpi-report.png?view=sql-server-ver17)
+
 #### 課十一.Graphical indicators
+
 [Indicators](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/indicators-report-builder-and-ssrs?view=sql-server-ver17)
+
 ![Indicators](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/media/rs-indicatortabletrafficlight.gif?view=sql-server-ver17)
 
 #### 課十二.Lists         
+
 ![List](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/media/rs-basiclistformdesign.gif?view=sql-server-ver17)
+
 [Create invoices and forms with lists in a paginated report (Report Builder)](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/create-invoices-and-forms-with-lists-report-builder-and-ssrs?view=sql-server-ver17)
 
 #### 課十三.Subreports  
 
 ![subreport](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/media/rs-subreport.gif?view=sql-server-ver17)
+
 [subreport](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/subreports-report-builder-and-ssrs?view=sql-server-ver17)
+
 [sub rep](https://cloud.tencent.com/developer/article/2444311)
 
 #### 課十四.Drill-through reports  
+
 ![](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/media/rs-drillthru.gif?view=sql-server-ver17)
+
 [link next page](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/drillthrough-reports-report-builder-and-ssrs?view=sql-server-ver17)
+
 [drill through](https://blog.csdn.net/GoodShot/article/details/8195690)
 
 ```js
@@ -222,7 +247,7 @@ private void reportViewer1_Drillthrough(object sender, DrillthroughEventArgs e)
 ```    
 #### 課十五.The SSRS web portal
 
-Install SSRS
+- Task Install SSRS
 
 Use the following steps to install SSRS.
 
@@ -231,26 +256,33 @@ Locate SQLServerReportingServices.exe and launch the installer.
 For a free edition, choose either Evaluation or Developer.
 ![SSRS free edition](https://learn.microsoft.com/en-us/sql/reporting-services/install-windows/media/install-reporting-services/report-server-install-edition-select.png?view=sql-server-ver17)
 
-自制網站.參考RdlcRender + RdlcJs.html2pdf
+- Task 自制網站.
 
 - express.js
 - Edge-JS
 - pdf.js
 
+> [!NOTE]
+> 參考 RdlcRender + RdlcJs.html2pdf
 
 ## 附加
 
 [ex1:Lesson 4 Creating Code to Generate the Report Definition File](https://learn.microsoft.com/en-us/previous-versions/sql/sql-server-2008-r2/ms170239(v=sql.105)?redirectedfrom=MSDN)
-- 修改NameSpace RDL 2005版改為2008版
-- body升高二層, 移除ReportSections ReportSection
+
+> [!NOTE]
+> 修改NameSpace RDL 2005版改為2008版
+> body升高二層, 移除ReportSections ReportSection
 
 
 [ex2:PeriodicTable, Generating RDLC Dynamically](https://www.codeproject.com/articles/Generating-RDLC-Dynamically-for-the-Report-Viewer-#comments-section)
+
 ![PeriodicTable](https://github.com/eddylin2015/RDLC_Report_Design_View/blob/main/img/PeriodicTable.png?raw=true)
-- RDL 2005版改為2008版
-- 修改 Report.cs
-- 修改 PeriodicTableReportGenerator.cs
-- 修改 Report1.rdlc
+
+> [!NOTE]
+> RDL 2005版改為2008版
+> 修改 Report.cs
+> 修改 PeriodicTableReportGenerator.cs
+> 修改 Report1.rdlc
 
 ## 參考:
 [教學課程：建立基本資料表報表 (報表產生器)](https://learn.microsoft.com/zh-tw/sql/reporting-services/tutorial-creating-a-basic-table-report-report-builder?view=sql-server-ver17&source=recommendations)
