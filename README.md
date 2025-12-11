@@ -85,8 +85,7 @@ Report Property :
 > The A4 size paper measures 210 by 297 millimeters (8.27 in × 11.7 in)    
 > 1 pages: size: 7.9in 9.4in   
 > 1 page inner : 7.7in 9.0 in   
-
-[认识页面 Margin](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs?view=sql-server-ver17)
+> [认识页面 Margin](https://learn.microsoft.com/en-us/sql/reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs?view=sql-server-ver17)
 
 - Task : Form2 ReportViewerControl 
 
@@ -100,7 +99,14 @@ setup.Margins = new System.Drawing.Printing.Margins(1, 1, 1, 1);
 frmReport.reportViewer1.SetPageSettings(setup);
 ```
 
-#### 課二.Data sources and datasets
+- Task : Form1 >[RDLC 報表]
+
+```js
+var form2=new Form2();
+from2.Show();
+```
+
+#### 課二. Parameters , Data sources and datasets
 
 [report-datasets](https://learn.microsoft.com/en-us/sql/reporting-services/report-data/report-datasets-ssrs?view=sql-server-ver17)
 
